@@ -1,0 +1,204 @@
+#card .more {
+    border-radius: 30%;
+}
+
+#card .more {
+    position: absolute;
+    bottom: -20px;
+    background: black;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #47485a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    transition: background-color .3s, all .6s;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+#card .more:not(.expanded):hover {
+    background-color: #575871;
+}
+
+#card .more.expanded {
+    animation: none;
+    background-image: none;
+    cursor: default;
+    width: 100%;
+    bottom: 0;
+    border-radius: 30px;
+    box-shadow: none;
+    overflow: hidden;
+    animation: expand-info .5s forwards linear;
+    animation-delay: .5s;
+}
+
+#card .more.expanded .dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#card .more.expanded .more-info {
+    z-index: 1;
+}
+
+#card .more-info {
+    width: 100%;
+    height: 100%;
+}
+
+#card .paginator {
+    width: 100%;
+    height: 100%;
+    display: inline-grid;
+    align-items: center;
+    grid-template-rows: [back] 80px [content] auto [menu] 60px;
+}
+
+#card .paginator .content {
+    padding: 0 1.8em 2em 1.8em;
+    height: 100%;
+}
+
+#card .paginator .go-back {
+    --asset-back: url('../../../assets/back.png');
+    background: var(--asset-back) center no-repeat;
+    width: 9px;
+    height: 14px;
+    grid-row: back;
+    cursor: pointer;
+    padding: 1em;
+    margin-left: 20px;
+    filter: opacity(.45);
+    transition: filter .2s ease-in-out;
+}
+
+#card .paginator .go-back:hover {
+    filter: opacity(1);
+}
+
+#card .more-info .content {
+    grid-row: content;
+}
+
+#card .more-info #menu {
+    grid-row: menu;
+}
+
+#card .more.expanded .dots div {
+    --position: -300px;
+    --delay: .6s;
+    margin: 0;
+    bottom: var(--position);
+    background: rgba(36, 39, 56, 0.5);
+    animation: transition-expand-more var(--delay) forwards linear;
+    animation-delay: var(--delay);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#card .more.expanded .dots div:nth-child(1) {
+    background: #af453b;
+}
+
+#card .more.expanded .dots div:nth-child(2) {
+    --delay: .7s;
+    background: #47a579;
+}
+
+#card .more.expanded .dots div:nth-child(3) {
+    --delay: .8s;
+    background: #3b3c42;
+}
+
+#card .more.retract {
+    animation: retract .5s forwards linear;
+}
+
+#card .more .dots.hidden {
+    visiblity: hidden;
+    display: none;
+}
+
+#card .more .dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card .more .dots div {
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    margin: 2px;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+#card .more:not(.expanded) .more-info {
+    visibility: hidden;
+    display: none;
+}
+
+#card .more:not(.expanded):hover .dots div {
+    animation: bounce-dots 1s infinite linear;
+}
+
+#card .more:not(.expanded) .dots div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#card .more:not(.expanded) .dots div:nth-child(2) {
+    animation-delay: .05s;
+}
+
+#card .more:not(.expanded) .dots div:nth-child(3) {
+    animation-delay: .08s;
+}
+
+@keyframes bounce {
+    50% {
+        bottom: -10px;
+    }
+}
+
+@keyframes bounce-dots {
+    45% {
+        margin-top: 10px;
+    }
+    75% {
+        margin-top: -10px;
+    }
+}
+
+@keyframes expand-info {
+    from {
+        height: 40px;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes retract {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 40px;
+    }
+}
+
+@keyframes transition-expand-more {
+    from {
+        bottom: -300px;
+    }
+    to {
+        bottom: 0;
+    }
+}

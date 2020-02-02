@@ -1,0 +1,71 @@
+[20:13:38.60] Global cache location '/home/nexi/.cache/typescript/3.7', safe file path '/usr/lib/node_modules/typescript/lib/typingSafeList.json', types map path /usr/lib/node_modules/typescript/lib/typesMap.json
+[20:13:38.61] Processing cache location '/home/nexi/.cache/typescript/3.7'
+[20:13:38.62] Trying to find '/home/nexi/.cache/typescript/3.7/package.json'...
+[20:13:38.64] Loaded content of '/home/nexi/.cache/typescript/3.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.476"},"devDependencies":{"@types/async":"^3.0.5","@types/atob":"^2.1.2","@types/create-react-class":"^15.6.3","@types/denodeify":"^1.2.31","@types/history":"^4.7.4","@types/immediate":"^3.2.0","@types/isomorphic-fetch":"0.0.35","@types/node":"^12.12.14","@types/object-assign":"^4.0.30","@types/object-hash":"^1.3.1","@types/object-path":"^0.11.0","@types/prop-types":"^15.7.3","@types/react":"^16.9.19","@types/react-dom":"^16.9.5","@types/react-is":"^16.7.1","@types/react-native":"^0.61.4","@types/react-router":"^5.1.4","@types/react-router-dom":"^5.1.3","@types/read":"0.0.28","@types/sprintf":"^0.1.0","@types/styled-components":"^4.4.2","@types/testing-library__jest-dom":"^5.0.0","@types/testing-library__react":"^9.1.2","@types/testing-library__user-event":"^4.1.1","@types/ua-parser-js":"^0.7.33"}}
+[20:13:38.64] Loaded content of '/home/nexi/.cache/typescript/3.7/package-lock.json'
+[20:13:38.89] Adding entry into typings cache: 'async' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/async/index.d.ts'
+[20:13:38.94] Adding entry into typings cache: 'atob' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/atob/index.d.ts'
+[20:13:38.97] Adding entry into typings cache: 'create-react-class' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/create-react-class/index.d.ts'
+[20:13:38.103] Adding entry into typings cache: 'denodeify' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/denodeify/index.d.ts'
+[20:13:38.115] Adding entry into typings cache: 'history' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/history/index.d.ts'
+[20:13:38.118] Adding entry into typings cache: 'immediate' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/immediate/index.d.ts'
+[20:13:38.121] Adding entry into typings cache: 'isomorphic-fetch' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/isomorphic-fetch/index.d.ts'
+[20:13:38.131] Adding entry into typings cache: 'node' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/node/ts3.2/index.d.ts'
+[20:13:38.134] Adding entry into typings cache: 'object-assign' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/object-assign/index.d.ts'
+[20:13:38.137] Adding entry into typings cache: 'object-hash' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/object-hash/index.d.ts'
+[20:13:38.144] Adding entry into typings cache: 'object-path' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/object-path/index.d.ts'
+[20:13:38.152] Adding entry into typings cache: 'prop-types' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/prop-types/index.d.ts'
+[20:13:38.157] Adding entry into typings cache: 'react' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/react/index.d.ts'
+[20:13:38.162] Adding entry into typings cache: 'react-dom' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/react-dom/index.d.ts'
+[20:13:38.169] Adding entry into typings cache: 'react-is' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/react-is/index.d.ts'
+[20:13:38.184] Adding entry into typings cache: 'react-native' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/react-native/index.d.ts'
+[20:13:38.186] Adding entry into typings cache: 'react-router' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/react-router/index.d.ts'
+[20:13:38.189] Adding entry into typings cache: 'react-router-dom' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/react-router-dom/index.d.ts'
+[20:13:38.192] Adding entry into typings cache: 'read' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/read/index.d.ts'
+[20:13:38.194] Adding entry into typings cache: 'sprintf' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/sprintf/index.d.ts'
+[20:13:38.199] Adding entry into typings cache: 'styled-components' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/styled-components/ts3.7/index.d.ts'
+[20:13:38.203] Adding entry into typings cache: 'testing-library__jest-dom' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/testing-library__jest-dom/index.d.ts'
+[20:13:38.207] Adding entry into typings cache: 'testing-library__react' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/testing-library__react/index.d.ts'
+[20:13:38.210] Adding entry into typings cache: 'testing-library__user-event' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/testing-library__user-event/index.d.ts'
+[20:13:38.213] Adding entry into typings cache: 'ua-parser-js' => '/home/nexi/.cache/typescript/3.7/node_modules/@types/ua-parser-js/index.d.ts'
+[20:13:38.213] Finished processing cache location '/home/nexi/.cache/typescript/3.7'
+[20:13:38.214] Process id: 180195
+[20:13:38.214] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[20:13:38.215] validateDefaultNpmLocation: false
+[20:13:38.215] Npm config file: /home/nexi/.cache/typescript/3.7/package.json
+[20:13:38.215] Updating types-registry npm package...
+[20:13:38.215] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[20:13:41.168]     Succeeded. stdout:
+    + types-registry@0.1.476
+    updated 1 package and audited 141 packages in 1.658s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+[20:13:41.169] Updated types-registry npm package
+[20:13:45.808] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/lib/node_modules/typescript/lib/lib.d.ts","/usr/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/Loader.jsx"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader","kind":"discover"}
+[20:13:45.865] Loaded safelist from types map file '/usr/lib/node_modules/typescript/lib/typesMap.json'
+[20:13:45.866] Explicitly included types: []
+[20:13:45.868] Inferred 'react' typings due to presence of '.jsx' extension
+[20:13:45.868] Inferred typings from unresolved imports: []
+[20:13:45.868] Result: {"cachedTypingPaths":["/home/nexi/.cache/typescript/3.7/node_modules/@types/react/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/bower_components","/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/node_modules"]}
+[20:13:45.869] Finished typings discovery: {"cachedTypingPaths":["/home/nexi/.cache/typescript/3.7/node_modules/@types/react/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/bower_components","/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/node_modules"]}
+[20:13:45.878] DirectoryWatcher:: Added:: WatchInfo: /home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/bower_components
+[20:13:45.900] DirectoryWatcher:: Added:: WatchInfo: /home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/node_modules
+[20:13:45.900] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/nexi/.cache/typescript/3.7/node_modules/@types/react/index.d.ts"],"unresolvedImports":[],"kind":"action::set"}
+[20:13:45.901] Response has been sent.
+[20:13:45.901] No new typings were requested as a result of typings discovery
+[20:13:46.695] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/lib/node_modules/typescript/lib/lib.d.ts","/usr/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/Loader.jsx","/home/nexi/.cache/typescript/3.7/node_modules/@types/react/global.d.ts","/home/nexi/.cache/typescript/3.7/node_modules/@types/react/index.d.ts"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader","kind":"discover"}
+[20:13:46.695] Explicitly included types: []
+[20:13:46.696] Inferred 'react' typings due to presence of '.jsx' extension
+[20:13:46.696] Inferred typings from unresolved imports: []
+[20:13:46.696] Result: {"cachedTypingPaths":["/home/nexi/.cache/typescript/3.7/node_modules/@types/react/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/bower_components","/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/node_modules"]}
+[20:13:46.696] Finished typings discovery: {"cachedTypingPaths":["/home/nexi/.cache/typescript/3.7/node_modules/@types/react/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/bower_components","/home/nexi/Documents/Programming/Projects/personal-page/src/components/card/loader/node_modules"]}
+[20:13:46.696] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/nexi/.cache/typescript/3.7/node_modules/@types/react/index.d.ts"],"unresolvedImports":[],"kind":"action::set"}
+[20:13:46.696] Response has been sent.
+[20:13:46.696] No new typings were requested as a result of typings discovery

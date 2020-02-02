@@ -1,0 +1,6 @@
+#+TITLE: Homepage
+#+AUTHOR: index
+
+Curriculum-like homepage.
+
+* WIP
