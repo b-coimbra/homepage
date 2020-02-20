@@ -17,7 +17,7 @@
 
 #profile p {
     font-size: 11pt;
-    color: grey;
+    color: #c0c3d8;
 }
 
 @keyframes slide-in {

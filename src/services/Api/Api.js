@@ -18,7 +18,10 @@ class Api {
   get defaultResponse() {
     return {
       username: '0-l',
-      name: 'Bruno'
+      name: 'Bruno',
+      surname: 'Coimbra',
+      bio: "I'm a fullstack developer living in Brazil.",
+      avatar_url: "../../../assets/avatar.jpg"
     }
   }
 
@@ -32,12 +35,12 @@ class Api {
       return await response.json();
     } catch(err) {
       console.error(err);
-      return {};
+      return this.defaultResponse;
     }
   }
 
   achievedRateLimit({ status }) {
-    return status === 403
+    return [403, 404].includes(status);
   }
 }
 

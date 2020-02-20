@@ -4,8 +4,14 @@ import { Link } from 'react-router-dom';
 
 import './Menu.css';
 
+import Api from '../../services/Api/Api.js';
+
 function Menu() {
   const sections = useRef();
+
+  Api.data.then(data => {
+    
+  });
 
   const deactivateSections = () => {
     sections

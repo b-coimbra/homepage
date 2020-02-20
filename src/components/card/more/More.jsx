@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 import {
-  BrowserRouter as Router,
+  Router,
   Switch,
   Route,
   useHistory
@@ -20,8 +20,19 @@ function More() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const fitContainerSize = () => selector.current.classList.add('expanded');
-  const showDots = () => dots.current.classList.remove('hidden');
+  const fitContainerSize   = () => selector.current.classList.add('expanded');
+  const showDots           = () => dots.current.classList.remove('hidden');
+  const shouldGoFullscreen = () => history.location.pathname !== '/profile';
+
+  useEffect(() => {
+    if (shouldGoFullscreen())
+      goFullscreen();
+  }, [history.location.pathname]);
+
+  function goFullscreen() {
+    console.log('went fullscreen');
+    selector.current.classList.add('fullscreen');
+  }
 
   function retractContainerSize() {
     let { classList: selectorClass } = selector.current;
@@ -66,13 +77,13 @@ function More() {
         <div className="paginator">
           <Router history={history}>
             <div onClick={retract} className="go-back"></div>
-          <div className="content">
-            <Switch>
-              <Route path="/profile" component={Profile}></Route>
-              <Route path="/projects" component={Projects}></Route>
-            </Switch>
-          </div>
-          <Menu/>
+            <div className="content">
+              <Switch>
+                <Route exact path="/profile" component={Profile}></Route>
+                <Route exact path="/projects" component={Projects}></Route>
+              </Switch>
+            </div>
+            <Menu/>
           </Router>
         </div>
       </div>

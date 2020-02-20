@@ -18,7 +18,7 @@ function App() {
 
 function Routes() {
   return (
-    <Router>
+    <Router basename={window.location.pathname || '/'}>
       <Switch>
         <Route path="/" component={Card} />
       </Switch>
