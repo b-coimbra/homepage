@@ -2,6 +2,7 @@
     --asset-profile: url('../../assets/profile.png');
     --asset-projects: url('../../assets/projects.png');
     --asset-github: url('../../assets/github.png');
+    /* --asset-dotfiles: url('../../assets/dotfiles.png'); */
 }
 
 #menu {
@@ -58,17 +59,37 @@
 
 #menu .section.profile  { background: var(--asset-profile) center no-repeat; }
 #menu .section.projects { background: var(--asset-projects) center no-repeat; }
+/* #menu .section.dotfiles { background: var(--asset-dotfiles) center no-repeat; } */
 
 #menu .section.projects.active ~ .mark {
     left: 38%;
 }
 
-/* #menu .section.dotfiles { background: var(--asset-projects) center no-repeat; } */
-
 #menu .section.github {
     background: var(--asset-github) center no-repeat;
     background-color: #bf4567;
     border-radius: 60px 0 0 60px;
+}
+
+#menu .section::after {
+    content: attr(name);
+    text-transform: uppercase;
+    color: #838487;
+    font: 600 9.9px 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: .5em;
+    top: 0;
+    opacity: 0;
+    transition: all .25s ease-in;
+    border-radius: 40px;
+}
+
+#menu .section:hover::after {
+    top: -25px;
+    opacity: 1;
 }
 
 @keyframes shine {

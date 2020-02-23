@@ -49,6 +49,7 @@ function Menu() {
             const isActive = (node) => 'active' in node ? ' active' : '';
 
             return <Link to={path.location}
+                         name={path.name}
                          className={"section " + path.name + isActive(path)}
                          key={i} />;
           })
