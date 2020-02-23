@@ -60,7 +60,7 @@
 #menu .section.projects { background: var(--asset-projects) center no-repeat; }
 
 #menu .section.projects.active ~ .mark {
-    left: 117px;
+    left: 38%;
 }
 
 /* #menu .section.dotfiles { background: var(--asset-projects) center no-repeat; } */

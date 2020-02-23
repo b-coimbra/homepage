@@ -1,11 +1,13 @@
-import React, { useRef, useEffect } from 'react';
-
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
+import paths from '../sections/paths';
 
 import './Menu.css';
 
 function Menu() {
   const sections = useRef();
+  const [addedEvents, setAddedEvents] = useState(false);
 
   const deactivateSections = () => {
     sections
@@ -18,26 +20,45 @@ function Menu() {
         section.classList.add('active');
 
   const addSectionEvents = () => {
+    if (addedEvents) return;
+
     let { childNodes: nodes } = sections.current;
 
+    const isGithub = ({ classList: node }) => node.contains('github');
+
     for (let node of nodes) {
+      if (isGithub(node))
+        continue;
+
       node.onclick = ({ target: section }) => {
         deactivateSections();
         activateSection(section);
       };
     }
+
+    setAddedEvents(true);
   };
 
   useEffect(() => addSectionEvents());
 
-  // TODO: <Link/> to corresponding components *onclick*
   return (
     <div id="menu">
       <div ref={sections} className="sections">
-        <Link to="/profile" className="section profile active"/>
-        <Link to="/projects" className="section projects"/>
-        <div className="section dotfiles"></div>
-        <a href="https://github.com/0-l/" className="section github"></a>
+        {
+          paths.map((path, i) => {
+            const isActive = (node) => 'active' in node ? ' active' : '';
+
+            return <Link to={path.location}
+                         className={"section " + path.name + isActive(path)}
+                         key={i} />;
+          })
+        }
+        <a href="https://github.com/0-l/"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="section github">
+          <p style={{ display: 'none' }}></p>
+        </a>
         <div className="mark"></div>
       </div>
     </div>

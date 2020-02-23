@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
+
 import './Card.css';
 
 import More   from './more/More.jsx';
 import Avatar from './avatar/Avatar.jsx';
 import Loader from '../loader/Loader.jsx';
-
-import Api from '../../services/Api/Api.js';
+import Api    from '../../services/Api/Api.js';
 
 function Card() {
   const [fullname, setFullname] = useState('');

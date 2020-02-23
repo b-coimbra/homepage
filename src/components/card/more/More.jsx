@@ -20,28 +20,39 @@ function More() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const fitContainerSize   = () => selector.current.classList.add('expanded');
-  const showDots           = () => dots.current.classList.remove('hidden');
-  const shouldGoFullscreen = () => history.location.pathname !== '/profile';
+  const effects = {
+    expanded: 'expanded',
+    hidden: 'hidden',
+    fullscreen: 'fullscreen',
+    retracted: 'retract'
+  };
+
+  const fitContainerSize = () => selector.current.classList.add(effects.expanded);
+  const showDots         = () => dots.current.classList.remove(effects.hidden);
 
   useEffect(() => {
-    if (shouldGoFullscreen())
-      goFullscreen();
-  }, [history.location.pathname]);
+    const isFullscreen = () => ['/projects'].includes(history.location.pathname);
 
-  function goFullscreen() {
-    console.log('went fullscreen');
-    selector.current.classList.add('fullscreen');
-  }
+    const goFullscreen = (isFull) => {
+      const { parentNode: card } = selector.current;
 
-  function retractContainerSize() {
+      if (!isFull)
+        card.classList.remove(effects.fullscreen);
+      else
+        card.classList.add(effects.fullscreen);
+    };
+
+    goFullscreen(isFullscreen());
+  }, [history.location.pathname, effects]);
+
+  const retractContainerSize = () => {
     let { classList: selectorClass } = selector.current;
 
-    selectorClass.add('retract');
+    selectorClass.add(effects.retracted);
 
     setTimeout(() => {
-      selectorClass.remove('expanded');
-      selectorClass.remove('retract');
+      selectorClass.remove(effects.expanded);
+      selectorClass.remove(effects.retracted);
 
       showDots();
     }, 500);
@@ -57,7 +68,7 @@ function More() {
   };
 
   const retract = () => {
-    retractContainerSize(false);
+    retractContainerSize();
     setIsOpen(false);
 
     history.push('/');
