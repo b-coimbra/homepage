@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 
 import Card from './components/card/Card.jsx';
+import Background from './Background.jsx';
 
 import {
   BrowserRouter as Router,
@@ -12,7 +13,10 @@ import {
 
 function App() {
   return (
-    <Routes/>
+    <>
+      <Routes/>
+      <Background/>
+    </>
   );
 }
 

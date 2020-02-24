@@ -28,7 +28,7 @@ function More() {
   };
 
   const fitContainerSize = () => selector.current.classList.add(effects.expanded);
-  const showDots         = () => dots.current.classList.remove(effects.hidden);
+  const showDots = () => dots.current.classList.remove(effects.hidden);
 
   useEffect(() => {
     const isFullscreen = () => ['/projects'].includes(history.location.pathname);

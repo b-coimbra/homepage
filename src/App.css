@@ -2,6 +2,10 @@
     --accent: #000;
 }
 
-body {
-    background: linear-gradient(to top, #7a6aff -100%, #fff 60%);
+#background {
+    position: absolute;
+    background: white;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #6c8dbd -100%, #fff 60%);
 }
