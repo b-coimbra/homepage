@@ -21,7 +21,7 @@ class Api {
       name: 'Bruno',
       surname: 'Coimbra',
       bio: "I'm a fullstack developer living in Brazil.",
-      avatar_url: "../../../assets/avatar.jpg"
+      followers: 30
     }
   }
 

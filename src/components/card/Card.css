@@ -43,6 +43,7 @@
     align-items: center;
     font-family: 'Raleway', sans-serif;
     margin-top: 3em;
+    transition: all .3s ease-in-out;
 }
 
 #card .info .fullname {

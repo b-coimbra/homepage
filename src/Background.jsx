@@ -61,13 +61,13 @@ function Background() {
     canvas.current.height = innerHeight;
   };
 
-  const setup = () => {
-    setCanvasSize();
-    autoresize();
-    draw();
-  };
-
   useEffect(() => {
+    const setup = () => {
+      setCanvasSize();
+      autoresize();
+      draw();
+    };
+
     setup();
   }, [canvas]);
 
