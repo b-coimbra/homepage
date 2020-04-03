@@ -10,7 +10,6 @@ import Api    from '../../services/Api/Api.js';
 function Card() {
   const [fullname, setFullname] = useState('');
   const [surname, setSurname] = useState('');
-
   const [isLoading, setIsLoading] = useState(false);
 
   Api.data.then(data => {

@@ -44,7 +44,7 @@ function Background() {
     let enlargedPoints = [];
 
     for (let x = 0; x <= size.x; x++) {
-      if (x >= (size.x / 2))
+      if (x == (size.x / 2))
         alpha *= -1;
 
       dim += (alpha / size.x);

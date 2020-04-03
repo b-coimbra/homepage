@@ -29,7 +29,7 @@ class Api {
     try {
       let response = await fetch(this.url);
 
-      if (this.achievedRateLimit(response))
+      if (this.hasFailed(response))
         return this.defaultResponse;
 
       return await response.json();
@@ -39,7 +39,7 @@ class Api {
     }
   }
 
-  achievedRateLimit({ status }) {
+  hasFailed({ status }) {
     return [403, 404].includes(status);
   }
 }

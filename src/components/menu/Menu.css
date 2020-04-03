@@ -27,7 +27,7 @@
     transition: filter .1s ease-in-out;
 }
 
-#menu .section:not(.github) {
+#menu .section:not(.static) {
     filter: opacity(.3);
 }
 
@@ -65,7 +65,7 @@
     left: 38%;
 }
 
-#menu .section.github {
+#menu .section.static {
     background: var(--asset-github) center no-repeat;
     background-color: #bf4567;
     border-radius: 60px 0 0 60px;

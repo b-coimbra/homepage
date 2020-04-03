@@ -24,10 +24,10 @@ function Menu() {
 
     let { childNodes: nodes } = sections.current;
 
-    const isGithub = ({ classList: node }) => node.contains('github');
+    const isStatic = ({ classList: node }) => node.contains('static');
 
     for (let node of nodes) {
-      if (isGithub(node))
+      if (isStatic(node))
         continue;
 
       node.onclick = ({ target: section }) => {
@@ -57,7 +57,7 @@ function Menu() {
         <a href="https://github.com/0-l/"
            target="_blank"
            rel="noopener noreferrer"
-           className="section github">
+           className="section static">
           <p style={{ display: 'none' }}></p>
         </a>
         <div className="mark"></div>
