@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import paths from '../sections/paths';
+import paths from '../../common/paths';
 
 import './Menu.css';
 
@@ -24,10 +24,10 @@ function Menu() {
 
     let { childNodes: nodes } = sections.current;
 
-    const isStatic = ({ classList: node }) => node.contains('static');
+    const isFixed = ({ classList: node }) => node.contains('fixed');
 
     for (let node of nodes) {
-      if (isStatic(node))
+      if (isFixed(node))
         continue;
 
       node.onclick = ({ target: section }) => {
@@ -57,7 +57,7 @@ function Menu() {
         <a href="https://github.com/0-l/"
            target="_blank"
            rel="noopener noreferrer"
-           className="section static">
+           className="section fixed">
           <p style={{ display: 'none' }}></p>
         </a>
         <div className="mark"></div>

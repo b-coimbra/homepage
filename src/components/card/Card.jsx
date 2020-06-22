@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 import './Card.css';
 
-import More   from './more/More.jsx';
-import Avatar from './avatar/Avatar.jsx';
+import More   from '../more/More.jsx';
+import Avatar from '../avatar/Avatar.jsx';
 import Loader from '../loader/Loader.jsx';
-import Api    from '../../services/Api/Api.js';
+import Api    from '../../services/Api.js';
 
 function Card() {
   const [fullname, setFullname] = useState('');
@@ -18,12 +18,6 @@ function Card() {
 
     setIsLoading(false);
   });
-
-  // const setFullname = ({ name: fullname }) => {
-    // const [name, ...surname] = fullname.split(" ");
-  //   setName(name);
-  //   setSurname(surname);
-  // };
 
   useEffect(() => {
     setIsLoading(true);

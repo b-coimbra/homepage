@@ -9,9 +9,9 @@ import {
 
 import './More.css';
 
-import Menu from '../../menu/Menu.jsx';
-import Profile from '../../sections/profile/Profile.jsx';
-import Projects from '../../sections/projects/Projects.jsx';
+import Menu from '../menu/Menu.jsx';
+import Profile from '../../pages/profile/Profile.jsx';
+import Projects from '../../pages/projects/Projects.jsx';
 
 function More() {
   const selector = useRef();

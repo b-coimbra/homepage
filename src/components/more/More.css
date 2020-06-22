@@ -5,7 +5,6 @@
 #card .more {
     position: absolute;
     bottom: -20px;
-    background: black;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -35,6 +34,11 @@
     animation-delay: .5s;
 }
 
+#card.fullscreen .more.expanded {
+	border-radius: 0;
+	background: black;
+}
+
 #card .more.expanded .dots {
     position: absolute;
     width: 100%;
@@ -48,6 +52,11 @@
 #card .more-info {
     width: 100%;
     height: 100%;
+	transition: background .3s ease-in;
+}
+
+#card.fullscreen .more.expanded .more-info {
+	background: #19181b;
 }
 
 #card .paginator {
@@ -55,7 +64,7 @@
     height: 100%;
     display: inline-grid;
     align-items: center;
-    grid-template-rows: [back] 80px [content] auto [menu] 60px;
+    grid-template-rows: [back] 80px [content] auto [menu] 80px;
 }
 
 #card .paginator .content {
@@ -64,8 +73,7 @@
 }
 
 #card .paginator .go-back {
-    --asset-back: url('../../../assets/back.png');
-    background: var(--asset-back) center no-repeat;
+    background: url('../../assets/back.svg') center no-repeat;
     width: 9px;
     height: 14px;
     grid-row: back;
@@ -76,7 +84,16 @@
     transition: filter .2s ease-in-out;
 }
 
-#card .paginator .go-back:hover {
+#card.fullscreen .go-back {
+	--shadow-spacing: 8px;
+	filter: drop-shadow(var(--shadow-spacing) 0 0 #bf4567);
+}
+
+#card.fullscreen .go-back:hover {
+	--shadow-spacing: 0;
+}
+
+#card:not(.fullscreen) .paginator .go-back:hover {
     filter: opacity(1);
 }
 

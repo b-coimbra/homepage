@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './Profile.css';
 
-import Api from '../../../services/Api/Api.js';
+import Api from '../../services/Api.js';
 
 function Profile() {
   const [bio, setBio] = useState('');

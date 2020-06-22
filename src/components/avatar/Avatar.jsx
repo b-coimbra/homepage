@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import './Avatar.css';
-import Api from '../../../services/Api/Api.js';
-import DefaultAvatar from '../../../assets/avatar.jpg';
+import Api from '../../services/Api.js';
+import DefaultAvatar from '../../assets/avatar.jpg';
 
 function Avatar () {
   const [avatar, setAvatar] = useState('');

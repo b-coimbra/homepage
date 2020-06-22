@@ -1,7 +1,7 @@
 class Api {
   constructor() {
     this.url = "https://api.github.com/users/" + this.username;
-    this.data = this.getData();
+    this.data = this.getData(this.url);
   }
 
   get username() {
@@ -25,9 +25,9 @@ class Api {
     }
   }
 
-  async getData() {
+  async getData(url) {
     try {
-      let response = await fetch(this.url);
+      let response = await fetch(url);
 
       if (this.hasFailed(response))
         return this.defaultResponse;

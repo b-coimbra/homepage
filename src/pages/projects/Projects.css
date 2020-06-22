@@ -1,0 +1,32 @@
+.timeline {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.projects-list {
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+	position: relative;
+}
+
+.projects-list::after {
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    width: 1px;
+    height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.project {
+    /* color: #fff; */
+    /* font-family: 'Robot', sans-serif; */
+    /* box-shadow: inset 2px 0 0 red; */
+    /* padding-left: 1em; */
+    /* display: grid; */
+    /* grid-template-rows: 1fr 30px; */
+}

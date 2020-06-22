@@ -44,7 +44,7 @@ function Background() {
     let enlargedPoints = [];
 
     for (let x = 0; x <= size.x; x++) {
-      if (x == (size.x / 2))
+      if (x === (size.x / 2))
         alpha *= -1;
 
       dim += (alpha / size.x);
@@ -52,7 +52,7 @@ function Background() {
       for (let y = 0; y <= size.y; y++) {
         let coordinates = {
           x: (x * spacing) + radius + padding,
-          y: (y * spacing) + radius + padding 
+          y: (y * spacing) + radius + padding
         };
 
         Circle({
@@ -69,9 +69,13 @@ function Background() {
           (range <= num && range >= num - pad);
 
     const pinpoint = (x, y) =>
-          circles.filter(circle => (inRange(x, circle.x, padding * 2)) && (inRange(y, circle.y, padding * 2)))[0];
+          circles.filter(
+            circle =>
+			  (inRange(x, circle.x, padding * 2)) &&
+			  (inRange(y, circle.y, padding * 2))
+          )[0];
 
-    const enlarge = (location, radius = 1) => {
+	const enlarge = (location, radius = 1) => {
       let velocity  = 20,
           maxRadius = 30,
           minRadius = 1,
